@@ -1,5 +1,5 @@
 # general configuration
-url: mhep.github.io
+url: https://mhep.github.io
 baseurl: /WeatherReports
 
 # compass configuration
