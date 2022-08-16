@@ -1,0 +1,26 @@
+---
+layout: base
+---
+<div class="wrapper">
+    <header>
+        {% if site.compass.logo %}
+        <div class="logo-container">
+          <a class="logo" href="{{ page.baseurl }}" style="background-image: url('{{ site.baseurl }}{{ site.compass.logo }}')"></a>
+        </div>
+        {% endif %}
+
+        {% if site.compass.author %}
+        <div class="author-container"><h1>{{ site.compass.author }}</h1></div>
+        {% endif %}
+
+        {% if site.compass.tagline %}
+        <div class="tagline-container"><p>{{ site.compass.tagline }}</p></div>
+        {% endif %}
+    </header>
+    <main>
+		<h2><a href="/"><i class="fa-solid fa-arrow-left-long"></i></a><br>Prof. Jussi Parikka</h2>
+		
+		<p>is Professor of Digital Aesthetics and Culture at Aarhus University as well as Professor of Technological Culture & Aesthetics at the Winchester School of Art. He also leads the project Operational Images and Visual Culture at FAMU, Prague. In 2021, he was elected as member of Academia Europaea. With Ryan Bishop he co-edits the  the book series “Technicities” (Edinburgh UP). His books include <em>Insect Media</em> (2010), <em>A Geology of Media</em> (2015), and most recently, the co-authored <em>The Lab Book: Situated Practices in Media Studies</em> (2022, with Darren Wershler and Lori Emerson). His co-edited book <em>Photography off the Scale</em> came out in 2021 and the forthcoming monograph <em>Operational Images. From Visual to Invisual Culture</em> is due in early 2023.
+</p>
+    </main>
+</div>

@@ -1,0 +1,25 @@
+---
+layout: base
+---
+<div class="wrapper">
+    <header>
+        {% if site.compass.logo %}
+        <div class="logo-container">
+          <a class="logo" href="{{ page.baseurl }}" style="background-image: url('{{ site.baseurl }}{{ site.compass.logo }}')"></a>
+        </div>
+        {% endif %}
+
+        {% if site.compass.author %}
+        <div class="author-container"><h1>{{ site.compass.author }}</h1></div>
+        {% endif %}
+
+        {% if site.compass.tagline %}
+        <div class="tagline-container"><p>{{ site.compass.tagline }}</p></div>
+        {% endif %}
+    </header>
+    <main>
+		<h2><a href="/"><i class="fa-solid fa-arrow-left-long"></i></a><br>Prof. Ryan Bishop</h2>
+		
+		<p>is Professor of Global Art and Politics at the Winchester School of Art, University of Southampton (UK). In addition to co-editing the journal <em>Cultural Politics</em> (Duke UP), he co-edits with Jussi Parikka the book series “Technicities” (Edinburgh UP) and “A <em>Cultural Politics</em> Book” series (Duke). His most recent book is <em>Technocrats of the Imagination: Art, Technology and the Military-Industrial Avant-garde</em> (2020) co-authored with John Beck (<a href="https://library.oapen.org/handle/20.500.12657/43811">available OA</a>). His current research is on large-scale sensing systems, military technology and aesthetic production, and the technicalities of perception.</p>
+    </main>
+</div>

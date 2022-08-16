@@ -1,0 +1,25 @@
+---
+layout: base
+---
+<div class="wrapper">
+    <header>
+        {% if site.compass.logo %}
+        <div class="logo-container">
+          <a class="logo" href="{{ page.baseurl }}" style="background-image: url('{{ site.baseurl }}{{ site.compass.logo }}')"></a>
+        </div>
+        {% endif %}
+
+        {% if site.compass.author %}
+        <div class="author-container"><h1>{{ site.compass.author }}</h1></div>
+        {% endif %}
+
+        {% if site.compass.tagline %}
+        <div class="tagline-container"><p>{{ site.compass.tagline }}</p></div>
+        {% endif %}
+    </header>
+    <main>
+		<h2><a href="/"><i class="fa-solid fa-arrow-left-long"></i></a><br>Prof. Birgit Schneider</h2>
+		
+		<p>is professor for Knowledge Cultures and Media Environments in the Department of European Media Studies at the University of Potsdam, Germany. She studied art and media studies as well as media art and philosophy in Karlsruhe, London and Berlin. After initially working as a graphic designer, she worked from 2000 to 2007 at the research department “The Technical Image” at the Humboldt-Universität zu Berlin, where she received her doctorate. Since 2009, she has been researching in the context of fellowships at the European Media Studies Department of the University of Potsdam as well as in Munich, Weimar and Cambridge, UK. Her current research focuses are images and perceptions of nature, ecology and climate change, diagrams, data graphics and maps as well as images of ecology.</p>
+    </main>
+</div>
