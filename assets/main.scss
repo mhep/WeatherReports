@@ -2,7 +2,7 @@
 ---
 $text-color: #000000;
 $anchor-text-color: #ff0a1f;
-$background-color: #ECEBE4;
+$background-color: #DDE4E7;
 
 body {
 	font-family: 'Vollkorn', serif;
@@ -94,12 +94,7 @@ since it must be aligned with the content */
 
 /******/
 hr {
-	border: 0;
-	height: 1px;
-	background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), $text-color, rgba(0,0,0,0));
-	background-image: -moz-linear-gradient(left, rgba(0,0,0,0), $text-color, rgba(0,0,0,0));
-	background-image: -ms-linear-gradient(left, rgba(0,0,0,0), $text-color, rgba(0,0,0,0));
-	background-image: -o-linear-gradient(left, rgba(0,0,0,0), $text-color, rgba(0,0,0,0));
+    border-top: 2px dashed #0033ff;
 }
 
 /*** footer ***/
@@ -150,8 +145,8 @@ footer {
 	}
 
 	main {
-		width: 46%;
+		width: 60%;
 		margin-left: 54%;
-		padding: 0;
+		padding: 0 0 25px;
 	}
 }
