@@ -54,96 +54,23 @@ a:focus, a:hover {
 a:active {
   color: blue;
 }
-h1 a:empty:before, h2 a:empty:before, h3 a:empty:before,
-h4 a:empty:before, h5 a:empty:before, h6 a:empty:before {
-  content: "#";
-}
-h1 a:empty, h2 a:empty, h3 a:empty, h4 a:empty, h5 a:empty, h6 a:empty {
-  visibility: hidden;
-  padding-left: 0.25em;
-}
-h1:hover a:empty, h2:hover a:empty, h3:hover a:empty,
-h4:hover a:empty, h5:hover a:empty, h6:hover a:empty {
-  visibility: visible;
-}
  
 	
-figure {
-  margin: 1em 0;
-  text-align: center;
-}
-figcaption {
-  font-size: small;
-}
-pre, code, samp, kbd {
-  color: #009;
-  font-family: monospace, monospace;
-}
-pre kbd {
-  color: #060;
-}
-pre, blockquote {
-  background: #eee;
-  padding: 0.5em;
-}
-pre {
-  overflow: auto;
-}
-blockquote {
-  border-left: medium solid #ccc;
-  margin: 1em 0;
-}
-blockquote :first-child {
-  margin-top: 0;
-}
-blockquote :last-child {
-  margin-bottom: 0;
-}
-table {
-  border-collapse: collapse;
-}
-th, td {
-  border: thin solid #999;
-  padding: 0.3em 0.4em;
-  text-align: left;
-}
-hr {
-  border-top: 2px solid #ffffff;
-}
-
-
-/* 
-@media (prefers-color-scheme: dark) {
+/* Make the site responsive */
+@media (max-width: 768px) {
   body {
-    background: #111;
-    color: #bbb;
+    max-width: 100%;
+    margin-top: 50px;
+    padding: 0 10px;
   }
-  a:link {
-    color: #9bf;
+  h1 {
+    font-size: 24pt; /* Smaller size for smaller screens */
   }
-  a:visited {
-    color: #caf;
+  h2, h3, h4, h5, h6 {
+    font-size: 14pt; /* Adjusting heading sizes for small screens */
   }
-  a:focus, a:hover {
-    color: #9cf;
-  }
-  a:active {
-    color: #faa;
-  }
-  pre, code, samp, kbd {
-    color: #6cf;
-  }
-  pre kbd {
-    color: #9c6;
-  }
-  pre, blockquote {
-    background: #000;
-  }
-  blockquote {
-    border-color: #333;
-  }
-  th, td {
-    border-color: #666;
+  /* Hide images on small screens */
+  img, picture, figure {
+    display: none;
   }
 }
-*/ 
