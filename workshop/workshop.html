@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Image Display</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-gap: 10px;
+            width: 90%;
+        }
+        .grid-container img {
+            width: 100%;
+            height: auto;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        @media only screen and (max-width: 640px) {
+            .grid-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container" id="imageContainer"></div>
+
+    <script>
+        // Array of image filenames (assuming they are in a folder named 'images')
+        const images = [
+            'image1.jpg', 'image2.jpg', 'image3.jpg', 'image4.jpg', 'image5.jpg',
+            'image6.jpg', 'image7.jpg', 'image8.jpg', 'image9.jpg', 'image10.jpg',
+            'image11.jpg', 'image12.jpg', 'image13.jpg', 'image14.jpg', 'image15.jpg',
+            'image16.jpg', 'image17.jpg', 'image18.jpg', 'image19.jpg', 'image20.jpg',
+            'image21.jpg', 'image22.jpg', 'image23.jpg'
+        ];
+
+        // Function to shuffle array
+        function shuffleArray(array) {
+            for (let i = array.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [array[i], array[j]] = [array[j], array[i]];
+            }
+            return array;
+        }
+
+        // Function to display images
+        function displayImages() {
+            const container = document.getElementById('imageContainer');
+            const shuffledImages = shuffleArray([...images]);
+
+            shuffledImages.forEach(image => {
+                const img = document.createElement('img');
+                img.src = `images/${image}`;
+                img.alt = 'Random Image';
+                container.appendChild(img);
+            });
+        }
+
+        // Call the function when the page loads
+        window.onload = displayImages;
+    </script>
+</body>
+</html>
