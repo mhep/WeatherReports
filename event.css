@@ -1,0 +1,101 @@
+body {
+  color: black;
+  background: white;
+  font-family: helvetica, arial, sans-serif;
+  line-height: 1.5;
+  max-width: 40em;
+  padding: 0 1em;
+  margin-bottom: 100px;
+  margin-top: 200px;
+  margin-left: 50px;
+
+  
+}
+h1, h2, h3, h4, h5, h6 {
+  margin: 1.25em 0 0.5em 0;
+  line-height: 1.2;
+}
+
+p{
+  background-color: white; }
+
+h1 {
+	margin: 0 0 0 0;
+	font-size: 40pt;
+}
+
+h2 {
+	margin: 0em 0 0.5em 0;
+  font-weight: normal; /* Ensures the text is not bold */
+
+}
+
+h3 {
+	margin: 2em 0 0 0;
+	
+}
+
+h4
+{
+  
+  font-size: 15pt;
+  border: 2px solid black; /* Sets a black border around the text */
+  padding: 5px; /* Adds some padding inside the border */
+  font-weight: normal; /* Ensures the text is not bold */
+
+}
+
+ul {
+	margin: 0 0 1em 0;
+    list-style-type: square;
+	
+}
+
+a:link {
+  color: blue;
+  /*background-color: #F2F8F7;*/
+    font-style: normal;
+	  font-variant: normal;
+	  text-decoration: none;
+}
+a:visited {
+  color: blue;
+}
+a:focus, a:hover {
+}
+a:active {
+  color: blue;
+}
+
+table {
+       width: 100%;
+       border-collapse: collapse;
+   }
+   th, td {
+       border: 1px solid black;
+       padding: 10px;
+       text-align: left;
+   }
+   th {
+       background-color: #f2f2f2;
+   }
+ 
+	
+/* Make the site responsive */
+@media (max-width: 768px) {
+  body {
+    max-width: 100%;
+    margin-top: 50px;
+    padding: 0 10px;
+  }
+  h1 {
+    font-size: 24pt; /* Smaller size for smaller screens */
+  }
+  h2, h3, h4, h5, h6 {
+    font-size: 14pt; /* Adjusting heading sizes for small screens */
+  }
+  /* Hide images on small screens */
+  img, picture, figure {
+    display: none;
+  }
+}  
