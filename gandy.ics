@@ -1,0 +1,35 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ical.marudot.com//iCal Event Maker
+CALSCALE:GREGORIAN
+BEGIN:VTIMEZONE
+TZID:Europe/Berlin
+LAST-MODIFIED:20240422T053451Z
+TZURL:https://www.tzurl.org/zoneinfo-outlook/Europe/Berlin
+X-LIC-LOCATION:Europe/Berlin
+BEGIN:DAYLIGHT
+TZNAME:CEST
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+DTSTART:19700329T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZNAME:CET
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+DTSTART:19701025T030000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20240917T150143Z
+UID:1726585266157-54406@ical.marudot.com
+DTSTART;TZID=Europe/Berlin:20241113T170000
+DTEND;TZID=Europe/Berlin:20241113T190000
+SUMMARY:Matthew Gandy: Attentive observation
+URL:https://winds.report/gandy
+DESCRIPTION:Attentive observation: Walking\, listening\, staying put\n\nIn this presentation I will suggest that a renewed emphasis on “attentive observation\,” as both a form of radical empiricism and a source of imaginative insight\, might contribute towards building a more nuanced conception of fieldwork that is better attuned to the multisensory and multispecies textures of material geographies. I will focus on interactions with nature\, landscape\, and nonhuman others in an urban context but my argument has wider connotations for concerns with embodied methodologies\, critical phenomenology\, and slower forms of research. 
+LOCATION:Hermann-Elflein-Str. 18\, 14467 Potsdam
+END:VEVENT
+END:VCALENDAR
